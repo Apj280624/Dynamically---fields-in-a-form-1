@@ -51,10 +51,6 @@ const Form2 = () => {
   const [formValues, setFormValues] = useState([{ name: "", email: "" }]);
 
   let handleChange = (i, e) => {
-    // let newFormValues = [...formValues];
-    // newFormValues[i][e.target.name] = e.target.value;
-    // setFormValues(newFormValues);
-
     setFormValues((prevFormValues) => {
       let newFormValues = [...formValues];
       newFormValues[i][e.target.name] = e.target.value;
